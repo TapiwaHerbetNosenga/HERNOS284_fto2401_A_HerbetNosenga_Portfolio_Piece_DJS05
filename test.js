@@ -7,11 +7,14 @@ store.subscribe(state =>{
     console.log('Tally changed:', state)
 });
 
+store.getState()
 store.dispatch(increment());
 store.dispatch(increment());
+
+store.dispatch(decrement());
 
 store.dispatch(reset());
 
-store.dispatch(decrement());
+
 
 
